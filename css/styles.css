@@ -87,6 +87,10 @@ h3,
 p {
   margin: 0px;
 }
+button {
+  margin: 0;
+  padding: 0;
+}
 
 .backdrop {
   position: fixed;
@@ -284,14 +288,63 @@ ul.list.contacts-set {
 .form-field {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin-bottom: 10px;
 }
 .input-user-data {
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  height: 40px;
+  padding-left: 30px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-user-comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   resize: none;
+  padding: 12px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.label-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(10px, 35px);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus-within > .input-user-data {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+.form-field:focus-within > .label-icon {
+  fill: var(--accent-color);
+}
+.form-field:focus-within > .modal-user-comment {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+.submit-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: var(--accent-color);
+  color: var(--important-color);
+  cursor: pointer;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  border: 1px solid var(--accent-color);
+  text-align: center;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: box-shadow 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Hero Section styles */
 
 .hero-section {
