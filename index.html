@@ -96,6 +96,8 @@
                         <textarea name="modal-user-comment" id="modal-user-comment" rows="7" class="modal-user-comment" placeholder="Введите текст"></textarea>
                     </div>
                     <button type="submit" class="submit-button">Отправить</button>
+                    <input type="checkbox" name="" value="" id="agreement">
+                    <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="./index.html" class="link">Условия договора</a></label>
                 </form>
                 </div>
                 </div>
@@ -402,7 +404,23 @@
                     </li>
                 </ul>
             </div>
+                    <div class="footer-subscribe">
+                        <p class="join">подпишитесь на рассылку</p>
+                        <form class="subscribe-form">
+                            <div class="subscribe-input-form">
+                                <input type="email" class="subscribe-input" placeholder="E-mail">
+                                <label for="" class="subscribe-label"></label>
+                            </div>
+                            <div class="subscribe-button-item">
+                                <button type="submit" class="subscribe-button">Подписаться</button>
+                                <svg class="subscribe-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </div>
+                        </form>
+                    </div>
         </div>
+
     </footer>
 
 <script src="./JavaScript/modal.js"></script>

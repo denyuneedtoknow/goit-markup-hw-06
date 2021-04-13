@@ -761,5 +761,45 @@ ul.list.clients-section-list {
 
 .footer-info,
 .footer-social-links {
-  flex-basis: calc((50%-45px) / 2);
+  flex-basis: calc((50% - 45px) / 2);
+}
+.footer-subscribe {
+  flex-basis: calc(50% - 30px);
+}
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-button {
+  position: relative;
+  margin-left: 12px;
+  background-color: var(--accent-color);
+  color: var(--important-color);
+  cursor: pointer;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  border: 1px solid var(--accent-color);
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-icon {
+  position: absolute;
+  transform: translate(-40px, 15px);
+}
+
+.subscribe-input {
+  width: 358px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: var(--main-color);
+  border: 1px solid var(--common-text-color);
+  border-radius: 4px;
+  outline: none;
 }
