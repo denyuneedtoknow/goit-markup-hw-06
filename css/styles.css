@@ -384,6 +384,10 @@ ul.list.contacts-set {
   background-position: center;
   background-origin: border-box;
 }
+.checkbox:focus-within + .checkbox-custom-icon {
+  border: 2px solid var(--accent-color);
+}
+
 .link-conditions {
   color: var(--accent-color);
 }
