@@ -384,7 +384,9 @@ ul.list.contacts-set {
   background-position: center;
   background-origin: border-box;
 }
-
+.link-conditions {
+  color: var(--accent-color);
+}
 .submit-button {
   display: block;
   margin-right: auto;
